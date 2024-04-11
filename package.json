@@ -1,19 +1,33 @@
-t{
+{
   "name": "observability",
   "version": "1.0.0",
-  "description": "ESEP Assignment 12",
+  "description": "ESEP Project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardocarva/Observability.git"
+  },
+  "author": "Ricardo Carvalheira",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricardocarva/Observability/issues"
+  },
+  "homepage": "https://github.com/ricardocarva/Observability#readme",
   "dependencies": {
     "@opentelemetry/api": "^1.8.0",
+    "@opentelemetry/exporter-jaeger": "^1.23.0",
+    "@opentelemetry/exporter-metrics-otlp-http": "^0.50.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.50.0",
     "@opentelemetry/instrumentation-http": "^0.50.0",
     "@opentelemetry/instrumentation-mongodb": "^0.42.0",
+    "@opentelemetry/resources": "^1.23.0",
     "@opentelemetry/sdk-trace-node": "^1.23.0",
+    "cookie": "^0.6.0",
     "express": "^4.19.2",
+    "function-bind": "^1.1.2",
     "mongodb": "^4.3.1",
     "opentelemetry-instrumentation-express": "^0.40.0"
   }
